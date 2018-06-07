@@ -5,5 +5,6 @@
         <div class="text-center">
             <h1>Welcome to the Microposts</h1>
         </div>
+         {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
     </div>
 @endsection
