@@ -21,6 +21,9 @@
             </div>
         </div>
     </li>
+      
+      @include('user_favorite.favorite_button', ['microposts' => $microposts])
+
 @endforeach
 </ul>
 {!! $microposts->render() !!}
