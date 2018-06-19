@@ -17,12 +17,16 @@
                     {!! Form::open(['route' => ['microposts.destroy', $micropost->id], 'method' => 'delete']) !!}
                         {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
                     {!! Form::close() !!}
+                    
+                    @include('user_favorite.favorite_button', ['microposts' => $microposts])
                 @endif
+                
+                
             </div>
         </div>
     </li>
       
-      @include('user_favorite.favorite_button', ['microposts' => $microposts])
+      
 
 @endforeach
 </ul>
